@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Wedding-specific colors
+        "rose-gold": "hsl(var(--rose-gold))",
+        blush: "hsl(var(--blush))",
+        champagne: "hsl(var(--champagne))",
+        ivory: "hsl(var(--ivory))",
+        "dusty-rose": "hsl(var(--dusty-rose))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +63,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "gradient-romantic": "var(--gradient-romantic)",
+        "gradient-soft": "var(--gradient-soft)",
+        "gradient-overlay": "var(--gradient-overlay)",
+      },
+      boxShadow: {
+        romantic: "var(--shadow-romantic)",
+        card: "var(--shadow-card)",
+        glow: "var(--shadow-glow)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +96,30 @@ export default {
             height: "0",
           },
         },
+        "flip-card": {
+          "0%": { transform: "rotateY(0deg)" },
+          "100%": { transform: "rotateY(180deg)" },
+        },
+        "flip-card-back": {
+          "0%": { transform: "rotateY(180deg)" },
+          "100%": { transform: "rotateY(0deg)" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "scale-in": {
+          "0%": { transform: "scale(0.9)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "flip-card": "flip-card 0.6s ease-in-out",
+        "flip-card-back": "flip-card-back 0.6s ease-in-out",
+        "fade-in": "fade-in 0.6s ease-out",
+        "scale-in": "scale-in 0.4s ease-out",
       },
     },
   },
