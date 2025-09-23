@@ -19,29 +19,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="hero-page">
+    <div class="wishes-page">
         <!-- Background Image -->
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
+        <div class="wishes-background">
+            <div class="wishes-overlay"></div>
         </div>
 
         <!-- Content -->
-        <div class="hero-content">
-            <div class="hero-text fade-in">
-                <h1 class="hero-title">Wedding Wishes</h1>
-                <p class="hero-subtitle">A collection of love, joy, and well wishes for your special day</p>
-                <button class="hero-button" onclick="navigateToWishes()">
-                    View Our Wishes 💕
+        <div class="wishes-content">
+            <!-- Header -->
+            <div class="wishes-header">
+                <button class="back-button" onclick="navigateToHome()">
+                    <span class="back-arrow">←</span>
+                    Back to Home
                 </button>
+                <h1 class="wishes-title">Wedding Wishes</h1>
+                <p class="wishes-subtitle">Click on each card to read the heartfelt messages from your loved ones</p>
             </div>
-        </div>
 
-        <!-- Footer -->
-        <footer class="hero-footer">
-            <p>Wishing you a happy married life</p>
-        </footer>
+            <!-- Cards Grid -->
+            <div class="cards-grid" id="cardsGrid">
+                <!-- Cards will be dynamically loaded here -->
+            </div>
+
+            <!-- Footer -->
+            <footer class="wishes-footer">
+                <p>Wishing you a happy married life</p>
+            </footer>
+        </div>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Load wishes when page loads
+        document.addEventListener('DOMContentLoaded', loadWishes);
+    </script>
 </body>
 </html>
