@@ -227,7 +227,7 @@ body {
 .wish-card-inner {
     position: relative;
     width: 100%;
-    height: 20rem;
+    height: 23rem;
     transition: transform 0.7s ease-in-out;
     transform-style: preserve-3d;
     cursor: pointer;
