@@ -51,13 +51,23 @@ body {
     overflow: hidden;
 }
 
-.hero-background {
+/* .hero-background {
     position: absolute;
     inset: 0;
     background-image: url('./ink (1).png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  background-image: url('./ink (1).png');
+  background-size: contain;   /* Show the entire image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--ivory); /* fallback color for empty space */
 }
 
 .hero-overlay {
