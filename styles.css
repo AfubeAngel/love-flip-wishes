@@ -54,7 +54,7 @@ body {
 .hero-background {
     position: absolute;
     inset: 0;
-    background-image: url('./Chi3.jpg');
+    background-image: url('./chi.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
